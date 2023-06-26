@@ -1,5 +1,4 @@
 const mysql = require('mysql2');
-const inquirer = require('inquirer');
 const sequelize = require('./config/connections');
 const express = require('express');
 
@@ -12,4 +11,6 @@ app.use(express.urlencoded({ extended: true }));
 sequelize.sync().then(() => {
     app.listen(PORT, () => console.log('Now listening'));
 });
+
+
 
