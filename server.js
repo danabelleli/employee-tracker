@@ -8,8 +8,21 @@ const PORT = process.env.PORT || 3001;
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-sequelize.sync().then(() => {
-    app.listen(PORT, () => console.log('Now listening'));
+const db = mysql.createConnection(
+    {
+        host: 'localhost',
+        // MySQL username,
+        user: 'root',
+        // MySQL password
+        password: 'password',
+        database: 'employee_db'
+    },
+    console.log(`Connected to the employee_db database.`)
+);
+
+// example
+db.query('SELECT * FROM department', function (err, results) {
+    console.log(results);
 });
 
 

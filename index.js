@@ -14,4 +14,20 @@ const questions = [{
         'Update employee role'
     ]
 }
-]
+];
+
+const showAllDepartments = function () {
+
+}
+
+inquirer.prompt(questions)
+    .then((answers) => {
+        if (answers.SelectOption === 'View all departments') {
+            // call function to view all departments
+        } else if (answers.SelectOption === 'View all roles') {
+
+        } else if (answers.SelectOption === 'View all employees') {
+
+        }
+    });
+
