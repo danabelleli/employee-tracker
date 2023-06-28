@@ -13,7 +13,7 @@ N/A
 In order to use this app, you need to type the command "node server.js" in the terminal. A prompt with the following questions will pop up: View all departments, View all roles, View all employees, Add a department, Add a role, Add an employee and Update an employee role. 
 You select which ever you need, answer the questions if prompted and the database will update immedietly. 
 
-![scrrenshot](Screenshot.png)
+![scrrenshot](/Screenshot.png)
 
 
 
